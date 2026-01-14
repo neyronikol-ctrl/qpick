@@ -3,47 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Q-PIC | Сертификаты</title>
-  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Playfair+Display:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+  <title>Q-PIC</title>
   <style>
-    body { font-family: 'Inter', sans-serif; background: #ffffff; color: #000; margin: 0; }
-    #root { max-width: 450px; margin: 0 auto; min-height: 100vh; position: relative; }
+    body { font-family: Arial; text-align: center; padding: 50px; }
+    h1 { font-size: 48px; }
   </style>
 </head>
 <body>
-  <div id="root"></div>
-  <script>
-    const h = React.createElement;
-    const { useState, useEffect } = React;
-    
-    function App() {
-      const [city, setCity] = useState(null);
-      const [view, setView] = useState('catalog');
-      
-      if (!city) {
-        return h('div', { className: 'flex flex-col items-center justify-center min-h-screen px-10 text-center' },
-          h('h1', { className: 'text-3xl font-bold mb-8' }, 'Q-PIC'),
-          h('p', { className: 'text-gray-500 mb-12' }, 'Сертификаты'),
-          h('div', { className: 'w-full space-y-4' },
-            h('button', { onClick: () => setCity('MSK'), className: 'w-full py-4 border-2 border-black rounded-lg font-bold' }, 'МОСКВА'),
-            h('button', { onClick: () => setCity('SPB'), className: 'w-full py-4 border-2 border-black rounded-lg font-bold' }, 'ПЕТЕРБУРГ')
-          )
-        );
-      }
-      
-      return h('div', { className: 'flex flex-col items-center justify-center min-h-screen px-10 text-center' },
-        h('h1', { className: 'text-3xl font-bold mb-4' }, 'Q-PIC'),
-        h('p', { className: 'text-gray-500 mb-12' }, `Выбран: ${city}`),
-        h('button', { onClick: () => setCity(null), className: 'py-2 px-6 bg-black text-white rounded-lg' }, 'Назад')
-      );
-    }
-    
-    const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(h(App));
-  </script>
+  <h1>Q-PIC - Сертификаты</h1>
+  <p>✅ Приложение работает!</p>
 </body>
 </html>
