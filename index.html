@@ -180,7 +180,7 @@
                     ),
 
                     view === 'payment' && h('div', { className: 'flex flex-col items-center justify-center py-20 animate-fade' },
-                        h('div', { className: 'spinner mb-6' }),
+                        h('div', { className: 'spinner mb-6' }), disabled: !isFormValid,
                         h('h2', { className: 'text-xl font-black uppercase' }, 'Обработка платежа'),
                         h('p', { className: 'text-gray-400 text-sm mt-2' }, 'Ожидайте ответа банка...')
                     ),
